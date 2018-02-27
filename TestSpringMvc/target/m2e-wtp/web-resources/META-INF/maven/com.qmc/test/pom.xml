@@ -155,4 +155,18 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+    <profile>
+    <id>dev</id>
+    <activation>
+    <activeByDefault>true</activeByDefault><!-- 默认的使用Dev -->
+    </activation>
+    <properties>
+    <logger.level>info</logger.level>
+    <logger.file>../logs/comment.log</logger.file>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    </profile>
+    </profiles>
+    
 </project>
