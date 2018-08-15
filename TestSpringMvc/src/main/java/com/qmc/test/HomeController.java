@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/homec")
 public class HomeController {
 	
+	private Logger logger = LoggerFactory.getLogger(getClass());
+	
 	@RequestMapping(value = "/home",produces="application/json;charset=UTF-8")
 	public @ResponseBody String home() {
 		
@@ -25,4 +27,11 @@ public class HomeController {
 		return "home";
 	}
 	
+	
+	@RequestMapping("/list")
+	public @ResponseBody String getHome(){
+		logger.info("getHome info start");
+        logger.info("getHome info end");
+		return "success";
+	}
 }
