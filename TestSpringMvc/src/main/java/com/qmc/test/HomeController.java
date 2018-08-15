@@ -34,4 +34,11 @@ public class HomeController {
         logger.info("getHome info end");
 		return "success";
 	}
+	
+	@RequestMapping("/list111")
+	public @ResponseBody String getHome111(){
+		logger.info("getHome info start");
+        logger.info("getHome info end");
+		return "success";
+	}
 }
