@@ -38,6 +38,13 @@ public class HomeController {
 	@RequestMapping("/list111")
 	public @ResponseBody String getHome111(){
 		logger.info("getHome info start");
+        logger.info("getHome info end1");
+		return "success";
+	}
+	
+	@RequestMapping("/list112")
+	public @ResponseBody String getHome112(){
+		logger.info("getHome info start");
         logger.info("getHome info end");
 		return "success";
 	}
